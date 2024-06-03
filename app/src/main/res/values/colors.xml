@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="qehveyi">#704F38</color>
+    <color name="background">#FEFEFE</color>
+    <color name="aciq_qehveyi">#D1C7C5</color>
+    <color name="boz">#77000000</color>
+    <color name="textBoz">#797979</color>
+</resources>

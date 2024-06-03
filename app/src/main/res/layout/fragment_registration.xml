@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/background"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.RegistrationFragment">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutADWWW"
+        style="?attr/textInputFilledStyle"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:hint="John Johnson"
+        android:textColorHint="@color/textBoz"
+        app:boxBackgroundColor="@android:color/transparent"
+        app:boxStrokeColor="@color/qehveyi"
+        app:hintTextColor="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/daxilAdReg"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@android:color/transparent" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutMAILWWW"
+        style="?attr/textInputFilledStyle"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="35dp"
+        android:gravity="center"
+        android:hint="@string/exampleGmailYazisi"
+        android:textColorHint="@color/textBoz"
+        app:boxBackgroundColor="@android:color/transparent"
+        app:boxStrokeColor="@color/qehveyi"
+        app:hintTextColor="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="@+id/layoutADWWW"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/layoutADWWW"
+        app:layout_constraintTop_toBottomOf="@+id/layoutADWWW">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/daxilEmailReg"
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:background="@android:color/transparent" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutPASSWWW"
+        style="?attr/textInputFilledStyle"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="35dp"
+        android:gravity="center"
+        android:hint="***********"
+        android:textColorHint="@color/textBoz"
+        app:boxBackgroundColor="@android:color/transparent"
+        app:boxStrokeColor="@color/qehveyi"
+        app:endIconMode="password_toggle"
+        app:hintTextColor="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="@+id/layoutMAILWWW"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/layoutMAILWWW"
+        app:layout_constraintTop_toBottomOf="@+id/layoutMAILWWW">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/daxilPasswordReg"
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:background="@android:color/transparent"
+            android:inputType="textPassword"
+            android:textSize="17sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textAdYazisiRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fallingskymedium_ved9"
+        android:text="Name"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/layoutADWWW"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.145"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textMailYazisiRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-mail"
+        android:textSize="20sp"
+        android:fontFamily="@font/fallingskymedium_ved9"
+        app:layout_constraintBottom_toTopOf="@+id/layoutMAILWWW"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.158"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textPasswordYazisiRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textSize="20sp"
+        android:fontFamily="@font/fallingskymedium_ved9"
+        app:layout_constraintBottom_toTopOf="@+id/layoutPASSWWW"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.172"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/HesabYaratYazisi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/fallingskymedium_ved9"
+        android:text="Create Account"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:fontFamily="@font/fallingskymedium_ved9"
+        android:text="Fill your information below or register\nwith your social account."
+        android:textColor="@color/textBoz"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/HesabYaratYazisi"
+        app:layout_constraintStart_toStartOf="@+id/HesabYaratYazisi"
+        app:layout_constraintTop_toBottomOf="@+id/HesabYaratYazisi" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:button="@android:color/transparent"
+        android:checked="false"
+        android:drawableStart="@drawable/checkbox_remember"
+        android:fontFamily="@font/fallingskymedium_ved9"
+        android:text="@string/sertlerYazisi"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/layoutPASSWWW"
+        app:layout_constraintTop_toBottomOf="@+id/layoutPASSWWW" />
+
+    <Button
+        android:id="@+id/registerOlButton"
+        android:layout_width="360dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/qehveyi"
+        android:fontFamily="@font/fallingskymedium_ved9"
+        android:foregroundTint="@color/qehveyi"
+        android:gravity="center"
+        android:text="Sign Up"
+        android:textColor="@color/background"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/materialDidsdvvvdsidersa"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="80dp"
+        app:dividerColor="#E5E5E5"
+        app:dividerInsetEnd="16dp"
+        app:dividerInsetStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView20"
+        app:layout_constraintEnd_toEndOf="@+id/textView20"
+        app:layout_constraintTop_toTopOf="@+id/textView20" />
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/fallingskymedium_ved9"
+        android:text="Or sign in with"
+        android:textColor="#797979"
+        app:layout_constraintEnd_toEndOf="@+id/registerOlButton"
+        app:layout_constraintStart_toStartOf="@+id/registerOlButton"
+        app:layout_constraintTop_toBottomOf="@+id/registerOlButton" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/materialDidsdssvdsidersa"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        app:dividerColor="#E5E5E5"
+        app:dividerInsetEnd="16dp"
+        app:dividerInsetStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView20"
+        app:layout_constraintStart_toStartOf="@+id/textView20"
+        app:layout_constraintTop_toTopOf="@+id/textView20" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="500dp"
+        app:layout_constraintStart_toStartOf="@+id/materialDidsdvvvdsidersa"
+        app:layout_constraintTop_toBottomOf="@+id/textView20">
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:background="@drawable/apple_icon"
+            app:icon="@drawable/apple_icon" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="19dp"
+        app:cardCornerRadius="500dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView3"
+        app:layout_constraintStart_toEndOf="@+id/cardView3"
+        app:layout_constraintTop_toTopOf="@+id/cardView3">
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:background="@drawable/google_icon"
+            app:icon="@drawable/apple_icon" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="19dp"
+        app:cardCornerRadius="500dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView4"
+        app:layout_constraintStart_toEndOf="@+id/cardView4"
+        app:layout_constraintTop_toTopOf="@+id/cardView4">
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:background="@drawable/facebook_icon"
+            app:icon="@drawable/apple_icon" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textViewhesabartiqvarsa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="45dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="24dp"
+        android:text="Already have an account? "
+        android:fontFamily="@font/fallingskymedium_ved9"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/HesabaDaxilKecid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="3dp"
+        android:backgroundTint="@android:color/transparent"
+        android:text="@string/DaxilOlYazi"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewhesabartiqvarsa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.78"
+        app:layout_constraintStart_toStartOf="@+id/textViewhesabartiqvarsa"
+        app:layout_constraintTop_toTopOf="@+id/textViewhesabartiqvarsa" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

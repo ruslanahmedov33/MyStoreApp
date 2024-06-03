@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_graph"
+    app:startDestination="@id/girisilkFragment">
+
+    <fragment
+        android:id="@+id/girisilkFragment"
+        android:name="com.example.mystore.Fragments.GirisilkFragment"
+        android:label="fragment_girisilk"
+        tools:layout="@layout/fragment_girisilk">
+        <action
+            android:id="@+id/action_girisilkFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment" />
+        <action
+            android:id="@+id/action_girisilkFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_girisilkFragment_to_anaSehifeFragment"
+            app:destination="@id/anaSehifeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.example.mystore.Fragments.RegistrationFragment"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration">
+        <action
+            android:id="@+id/action_registrationFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.mystore.Fragments.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_parolUnutdumFragment"
+            app:destination="@id/parolUnutdumFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_OTPFragment"
+            app:destination="@id/OTPFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/parolUnutdumFragment"
+        android:name="com.example.mystore.Fragments.ParolUnutdumFragment"
+        android:label="fragment_parol_unutdum"
+        tools:layout="@layout/fragment_parol_unutdum" />
+    <fragment
+        android:id="@+id/anaSehifeFragment"
+        android:name="com.example.mystore.Fragments.AnaSehifeFragment"
+        android:label="fragment_ana_sehife"
+        tools:layout="@layout/fragment_ana_sehife">
+        <action
+            android:id="@+id/action_anaSehifeFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+        <action
+            android:id="@+id/action_anaSehifeFragment_to_categoryFragment"
+            app:destination="@id/categoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/isteklerFragment"
+        android:name="com.example.mystore.Fragments.IsteklerFragment"
+        android:label="fragment_istekler"
+        tools:layout="@layout/fragment_istekler" />
+    <fragment
+        android:id="@+id/profilFragment"
+        android:name="com.example.mystore.Fragments.ChangePasswordFragment"
+        android:label="fragment_profil"
+        tools:layout="@layout/fragment_changepassword" />
+    <fragment
+        android:id="@+id/OTPFragment"
+        android:name="com.example.mystore.Fragments.OTPFragment"
+        android:label="fragment_o_t_p"
+        tools:layout="@layout/fragment_o_t_p" >
+        <action
+            android:id="@+id/action_OTPFragment_to_anaSehifeFragment"
+            app:destination="@id/anaSehifeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment2"
+        android:name="com.example.mystore.Fragments.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_searchFragment2_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.example.mystore.Fragments.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" >
+        <argument
+            android:name="productID"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileeeFragment"
+        android:name="com.example.mystore.Fragments.ProfileeeFragment"
+        android:label="fragment_profileee"
+        tools:layout="@layout/fragment_profileee" >
+        <action
+            android:id="@+id/action_profileeeFragment_to_settingssFragment"
+            app:destination="@id/settingssFragment" />
+        <action
+            android:id="@+id/action_profileeeFragment_to_policyFragment"
+            app:destination="@id/policyFragment" />
+        <action
+            android:id="@+id/action_profileeeFragment_to_girisilkFragment"
+            app:destination="@id/girisilkFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingssFragment"
+        android:name="com.example.mystore.Fragments.SettingssFragment"
+        android:label="fragment_settingss"
+        tools:layout="@layout/fragment_settingss" >
+        <action
+            android:id="@+id/action_settingssFragment_to_profilFragment"
+            app:destination="@id/profilFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/policyFragment"
+        android:name="com.example.mystore.Fragments.PolicyFragment"
+        android:label="fragment_policy"
+        tools:layout="@layout/fragment_policy" />
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.example.mystore.Fragments.CategoryFragment"
+        android:label="fragment_category"
+        tools:layout="@layout/fragment_category" >
+        <argument
+            android:name="category"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_categoryFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+</navigation>

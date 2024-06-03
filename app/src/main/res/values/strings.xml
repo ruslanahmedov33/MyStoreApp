@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MyStore</string>
+
+    <string name="DaxilOlYazi"><u><font color="#704F38">Sign In</font></u></string>
+    <string name="Mystoreyazisi">The <font color="#704F38">MyStore</font> That\nMakes You Look Your Best </string>
+    <string name="ParolYaddancixdi"><u><font color="#704F38">Forgot Password?</font></u></string>
+    <string name="HesabYoxdurYazisi"><u><font color="#704F38">Sign Up</font></u></string>
+    <string name="exampleGmailYazisi">example@gmail.com</string>
+    <string name="sertlerYazisi">Agree with <u><font color="#704F38">Terms &amp; Condition</font></u></string>
+    <string name="altYazisiOTP">Please enter the code we just send to email\n<font color="#704F38">example@gmail.com</font></string>
+    <string name="altYazisiResend"><font color="#797979">Didn\'t receive OTP?</font>\n<u><font color="#704F38">Resend code</font></u></string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

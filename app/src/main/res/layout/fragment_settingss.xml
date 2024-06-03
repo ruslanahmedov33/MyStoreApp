@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.SettingssFragment">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:cardCornerRadius="500dp"
+        android:backgroundTint="#FFFFFF"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/backstackButtonn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@android:color/transparent"
+            app:icon="@drawable/baseline_arrow_back_ios_24"
+            app:iconGravity="textEnd"
+            app:iconSize="30dp"
+            app:iconTint="#000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/fallingskymedium_ved9"
+        android:text="Settings"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonnldgssgddddfdl"
+        android:layout_width="390dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/editprofile_profile_edits"
+        android:backgroundTint="@android:color/transparent"
+        android:fontFamily="@font/fallingskymedium_ved9"
+        android:gravity="center|left"
+        android:text=" Notification Settings"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        app:backgroundTint="@color/white"
+        app:icon="@drawable/profile_icon"
+        app:iconGravity="start"
+
+        app:iconSize="30dp"
+        app:iconTint="@color/qehveyi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <ImageView
+        android:layout_width="23dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/arrow_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonnldgssgddddfdl"
+        app:layout_constraintEnd_toEndOf="@+id/buttonnldgssgddddfdl"
+        app:layout_constraintTop_toTopOf="@+id/buttonnldgssgddddfdl"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/passwordChangeGo"
+        android:layout_width="390dp"
+        android:layout_height="50dp"
+        android:background="@drawable/editprofile_profile_edits"
+        android:backgroundTint="@android:color/transparent"
+        android:gravity="center|left"
+        android:text=" Password Manager"
+        android:textColor="@color/black"
+        android:fontFamily="@font/fallingskymedium_ved9"
+        android:textSize="17sp"
+        app:backgroundTint="@color/white"
+        app:icon="@drawable/key_iconn"
+        app:iconGravity="start"
+        app:iconSize="30dp"
+
+        app:iconTint="@color/qehveyi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintStart_toStartOf="@+id/buttonnldgssgddddfdl"
+        app:layout_constraintTop_toBottomOf="@+id/buttonnldgssgddddfdl" />
+
+    <ImageView
+        android:layout_width="23dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/arrow_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/passwordChangeGo"
+        app:layout_constraintEnd_toEndOf="@+id/passwordChangeGo"
+        app:layout_constraintTop_toBottomOf="@+id/buttonnldgssgddddfdl"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonnlssdgssssgddddfdl"
+        android:layout_width="390dp"
+        android:layout_height="50dp"
+        android:background="@drawable/editprofile_profile_edits"
+        android:backgroundTint="@android:color/transparent"
+        android:gravity="center|left"
+        android:text=" Delete Account"
+        android:textColor="@color/black"
+        android:fontFamily="@font/fallingskymedium_ved9"
+        android:textSize="17sp"
+        app:backgroundTint="@color/white"
+        app:icon="@drawable/cardd_icon"
+        app:iconGravity="start"
+        app:iconSize="30dp"
+
+        app:iconTint="@color/qehveyi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintStart_toStartOf="@+id/buttonnldgssgddddfdl"
+        app:layout_constraintTop_toBottomOf="@+id/passwordChangeGo" />
+
+    <ImageView
+        android:layout_width="23dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/arrow_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonnlssdgssssgddddfdl"
+        app:layout_constraintEnd_toEndOf="@+id/buttonnlssdgssssgddddfdl"
+        app:layout_constraintTop_toBottomOf="@+id/passwordChangeGo"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/materialDividaderssa"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="138dp"
+        app:dividerColor="#E5E5E5"
+        app:dividerInsetEnd="16dp"
+        app:dividerInsetStart="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/buttonnldgssgddddfdl"
+        app:layout_constraintStart_toStartOf="@+id/buttonnldgssgddddfdl"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/materialDividadersssAa"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="188dp"
+        app:dividerColor="#E5E5E5"
+        app:dividerInsetEnd="16dp"
+        app:dividerInsetStart="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/passwordChangeGo"
+        app:layout_constraintStart_toStartOf="@+id/passwordChangeGo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

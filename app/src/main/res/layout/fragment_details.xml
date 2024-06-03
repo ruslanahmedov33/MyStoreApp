@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Fragments.DetailsFragment">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintDetails"
+                android:layout_width="match_parent"
+                android:layout_height="780dp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+                <ImageView
+                    android:id="@+id/imageDetails"
+                    android:layout_width="0dp"
+                    android:layout_height="270dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <CheckBox
+                    android:layout_width="110dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="12dp"
+                    android:button="@android:color/transparent"
+                    android:checked="false"
+                    android:drawableStart="@drawable/checkbox_big_heart"
+                    app:buttonIconTint="@android:color/transparent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <androidx.cardview.widget.CardView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:cardCornerRadius="500dp"
+                    android:backgroundTint="#FFFFFF"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="24dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <Button
+                        android:id="@+id/backstackButton"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@android:color/transparent"
+                        app:icon="@drawable/baseline_arrow_back_ios_24"
+                        app:iconGravity="textEnd"
+                        app:iconSize="30dp"
+                        app:iconTint="#000000"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:id="@+id/categoryDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/fallingskymedium_ved9"
+                    android:textColor="@color/textBoz"
+                    android:textSize="19dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageDetails" />
+
+                <TextView
+                    android:id="@+id/titleDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="32dp"
+                    android:fontFamily="@font/fallingskymedium_ved9"
+                    android:textColor="@color/black"
+                    android:textSize="23dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/categoryDetails" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/fallingskymedium_ved9"
+                    android:text="Product Details"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/titleDetails" />
+
+                <TextView
+                    android:id="@+id/descriptionDetails"
+                    android:layout_width="350dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="32dp"
+                    android:fontFamily="@font/fallingskymedium_ved9"
+                    android:textColor="@color/textBoz"
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="45dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageDetails"
+                    app:srcCompat="@drawable/star_icon" />
+
+                <TextView
+                    android:id="@+id/ratingDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/fallingskymedium_ved9"
+                    android:textColor="@color/black"
+                    android:textSize="18.2dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView6"
+                    app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/fallingskymedium_ved9"
+
+                    android:text="Select Size"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    app:layout_constraintStart_toStartOf="@+id/descriptionDetails"
+                    app:layout_constraintTop_toBottomOf="@+id/descriptionDetails" />
+
+
+                <com.google.android.material.chip.ChipGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView23"
+                    app:singleSelection="true">
+
+
+
+                </com.google.android.material.chip.ChipGroup>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/buttdddonn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/sizeselect_bg"
+                    android:fontFamily="@font/fallingskymedium_ved9"
+                    android:gravity="center"
+                    android:text="S"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    app:backgroundTint="@color/qehveyi"
+                    app:layout_constraintStart_toStartOf="@+id/textView23"
+                    app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fallingskymedium_ved9"
+                    android:text="S"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/buttdddonn"
+                    app:layout_constraintEnd_toEndOf="@+id/buttdddonn"
+                    app:layout_constraintStart_toStartOf="@+id/buttdddonn"
+                    app:layout_constraintTop_toTopOf="@+id/buttdddonn" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/buttdddosssnn"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="12dp"
+                    android:fontFamily="@font/fallingskymedium_ved9"
+                    android:gravity="center"
+                    android:text="S"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    app:backgroundTint="@color/white"
+                    app:cornerRadius="10dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/buttdddonn"
+                    app:layout_constraintStart_toEndOf="@+id/buttdddonn"
+                    app:layout_constraintTop_toTopOf="@+id/buttdddonn"
+                    app:strokeColor="@color/textBoz"
+                    app:strokeWidth="1.1dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fallingskymedium_ved9"
+                    android:text="M"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/buttdddosssnn"
+                    app:layout_constraintEnd_toEndOf="@+id/buttdddosssnn"
+                    app:layout_constraintStart_toStartOf="@+id/buttdddosssnn"
+                    app:layout_constraintTop_toTopOf="@+id/buttdddosssnn" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/buttdaaddonn"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="12dp"
+                    android:fontFamily="@font/fallingskymedium_ved9"
+                    android:gravity="center"
+                    android:text="S"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    app:backgroundTint="@color/white"
+                    app:cornerRadius="10dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/buttdddosssnn"
+                    app:layout_constraintStart_toEndOf="@+id/buttdddosssnn"
+                    app:layout_constraintTop_toTopOf="@+id/buttdddosssnn"
+                    app:strokeColor="@color/textBoz"
+                    app:strokeWidth="1.1dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fallingskymedium_ved9"
+                    android:text="L"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/buttdaaddonn"
+                    app:layout_constraintEnd_toEndOf="@+id/buttdaaddonn"
+                    app:layout_constraintStart_toStartOf="@+id/buttdaaddonn"
+                    app:layout_constraintTop_toTopOf="@+id/buttdaaddonn" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/buttdddffonn"
+                    android:layout_width="55dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="12dp"
+                    android:fontFamily="@font/fallingskymedium_ved9"
+                    android:gravity="center"
+                    android:text="S"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    app:backgroundTint="@color/white"
+                    app:cornerRadius="10dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/buttdaaddonn"
+                    app:layout_constraintStart_toEndOf="@+id/buttdaaddonn"
+                    app:layout_constraintTop_toTopOf="@+id/buttdaaddonn"
+                    app:strokeColor="@color/textBoz"
+                    app:strokeWidth="1.1dp" />
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fallingskymedium_ved9"
+                    android:text="XL"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/buttdddffonn"
+                    app:layout_constraintEnd_toEndOf="@+id/buttdddffonn"
+                    app:layout_constraintStart_toStartOf="@+id/buttdddffonn"
+                    app:layout_constraintTop_toTopOf="@+id/buttdddffonn" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/butaaatdddonn"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="12dp"
+                    android:fontFamily="@font/fallingskymedium_ved9"
+                    android:gravity="center"
+                    android:text="S"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    app:backgroundTint="@color/white"
+                    app:cornerRadius="10dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/buttdddffonn"
+                    app:layout_constraintStart_toEndOf="@+id/buttdddffonn"
+                    app:layout_constraintTop_toTopOf="@+id/buttdddffonn"
+                    app:strokeColor="@color/textBoz"
+                    app:strokeWidth="1.1dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fallingskymedium_ved9"
+                    android:text="XXL"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/butaaatdddonn"
+                    app:layout_constraintEnd_toEndOf="@+id/butaaatdddonn"
+                    app:layout_constraintStart_toStartOf="@+id/butaaatdddonn"
+                    app:layout_constraintTop_toTopOf="@+id/butaaatdddonn" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/buttdddaaonn"
+                    android:layout_width="65dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="12dp"
+                    android:fontFamily="@font/fallingskymedium_ved9"
+                    android:gravity="center"
+                    android:text="S"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    app:backgroundTint="@color/white"
+                    app:cornerRadius="10dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/butaaatdddonn"
+                    app:layout_constraintStart_toEndOf="@+id/butaaatdddonn"
+                    app:layout_constraintTop_toTopOf="@+id/butaaatdddonn"
+                    app:strokeColor="@color/textBoz"
+                    app:strokeWidth="1.1dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fallingskymedium_ved9"
+                    android:text="XXXL"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/buttdddaaonn"
+                    app:layout_constraintEnd_toEndOf="@+id/buttdddaaonn"
+                    app:layout_constraintStart_toStartOf="@+id/buttdddaaonn"
+                    app:layout_constraintTop_toTopOf="@+id/buttdddaaonn" />
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="24dp"
+                    android:fontFamily="@font/fallingskymedium_ved9"
+                    android:text="Select Color:"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/buttdddonn" />
+
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout2"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/editback_settings"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginBottom="60dp"
+                        android:fontFamily="@font/fallingskymedium_ved9"
+                        android:text="Total Price:"
+                        android:textColor="@color/textBoz"
+                        android:textSize="17dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <TextView
+                        android:id="@+id/priceDetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="24dp"
+                        android:fontFamily="@font/fallingskymedium_ved9"
+                        android:textColor="@color/black"
+                        android:textSize="25dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/textView11"
+                        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/buttonn"
+                        android:layout_width="220dp"
+                        android:layout_height="60dp"
+                        android:layout_marginHorizontal="12dp"
+                        android:layout_marginEnd="24dp"
+                        android:background="@drawable/editback_button"
+                        android:backgroundTint="@android:color/transparent"
+                        android:fontFamily="@font/fallingskymedium_ved9"
+                        android:gravity="center"
+                        android:text="Buy"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        app:backgroundTint="@color/qehveyi"
+                        app:cornerRadius="10dp"
+                        app:icon="@drawable/store_icon"
+                        app:iconSize="28dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:strokeColor="@color/white"
+                        app:strokeWidth="1.3sp" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chipGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="0dp"
+                    app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView25"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:singleSelection="true">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="55dp"
+                        android:layout_height="wrap_content"
+                        app:chipBackgroundColor="@color/chip_background"
+                        app:chipCornerRadius="40dp"
+                        app:chipStrokeWidth="0dp" />
+
+
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip2"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="55dp"
+                        android:layout_height="wrap_content"
+                        app:chipBackgroundColor="@color/chip_background2"
+                        app:chipCornerRadius="40dp"
+                        app:chipStrokeWidth="0dp" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip3"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="55dp"
+                        android:layout_height="wrap_content"
+                        app:chipBackgroundColor="@color/chip_background3"
+                        app:chipCornerRadius="40dp"
+                        app:chipStrokeWidth="0dp" />
+
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip4"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="55dp"
+                        android:layout_height="wrap_content"
+                        app:chipBackgroundColor="@color/chip_background4"
+                        app:chipCornerRadius="40dp"
+                        app:chipStrokeWidth="0dp" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip5"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="55dp"
+                        android:layout_height="wrap_content"
+                        app:chipBackgroundColor="@color/chip_background5"
+                        app:chipCornerRadius="40dp"
+                        app:chipStrokeWidth="0dp" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip6"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="55dp"
+                        android:layout_height="wrap_content"
+                        app:chipBackgroundColor="@color/chip_background6"
+                        app:chipCornerRadius="40dp"
+                        app:chipStrokeWidth="0dp" />
+                </com.google.android.material.chip.ChipGroup>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progressBarDetails"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

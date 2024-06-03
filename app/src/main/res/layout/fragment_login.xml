@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        tools:context=".Fragments.LoginFragment">
+
+
+        <TextView
+            android:id="@+id/daxilolYazisi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/fallingskymedium_ved9"
+            android:text="Sign In"
+            android:textColor="@color/black"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/LoginAltyazisi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/fallingskymedium_ved9"
+            android:text="Hi! Welcome back,you've been missed"
+            android:textColor="@color/boz"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/daxilolYazisi"
+            app:layout_constraintStart_toStartOf="@+id/daxilolYazisi"
+            app:layout_constraintTop_toBottomOf="@+id/daxilolYazisi" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layoutEmailWWW"
+            style="?attr/textInputFilledStyle"
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="110dp"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:hint="@string/exampleGmailYazisi"
+            app:boxBackgroundColor="@android:color/transparent"
+            app:boxStrokeColor="@color/qehveyi"
+            app:hintTextColor="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/daxilolYazisi">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/daxilEmailLog"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@android:color/transparent" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layoutPASSWWW"
+            style="?attr/textInputFilledStyle"
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="45dp"
+            android:gravity="center"
+            android:hint="***********"
+            app:boxBackgroundColor="@android:color/transparent"
+            app:boxStrokeColor="@color/qehveyi"
+            app:endIconMode="password_toggle"
+            app:hintTextColor="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="@+id/layoutEmailWWW"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/layoutEmailWWW"
+            app:layout_constraintTop_toBottomOf="@+id/layoutEmailWWW">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="320dp"
+                android:layout_height="60dp"
+                android:background="@android:color/transparent"
+                android:id="@+id/daxilPassLog"
+                android:inputType="textPassword"
+                android:textSize="17sp" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <CheckBox
+            android:id="@+id/checkBoxRemember"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:drawableStart="@drawable/checkbox_remember"
+            android:checked="false"
+            android:button="@android:color/transparent"
+            android:fontFamily="@font/fallingskymedium_ved9"
+            android:text="Remember Me"
+            android:textColor="@color/qehveyi"
+            android:textSize="15sp"
+            app:buttonIconTint="@android:color/transparent"
+            app:layout_constraintStart_toStartOf="@+id/layoutPASSWWW"
+            app:layout_constraintTop_toBottomOf="@+id/layoutPASSWWW" />
+
+
+        <Button
+            android:id="@+id/enterBtn"
+            android:layout_width="320dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="65dp"
+            android:backgroundTint="@color/qehveyi"
+            android:fontFamily="@font/fallingskymedium_ved9"
+            android:foregroundTint="@color/qehveyi"
+            android:gravity="center"
+            android:text="Sign In"
+            android:textColor="@color/background"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layoutPASSWWW" />
+
+        <TextView
+            android:id="@+id/textAdYazisiLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Email"
+            android:textSize="20sp"
+            android:fontFamily="@font/fallingskymedium_ved9"
+            app:layout_constraintBottom_toTopOf="@+id/layoutEmailWWW"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/layoutEmailWWW" />
+
+
+        <TextView
+            android:id="@+id/textPasswordYazisiLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Password"
+            android:textSize="20sp"
+            android:fontFamily="@font/fallingskymedium_ved9"
+            app:layout_constraintBottom_toTopOf="@+id/layoutPASSWWW"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/layoutPASSWWW" />
+
+
+        <TextView
+            android:id="@+id/textViewhesabartiqvarsa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="45dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="120dp"
+            android:fontFamily="@font/fallingskymedium_ved9"
+            android:text="Don't have an account? "
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/HesabYaratKecid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="165dp"
+            android:layout_marginBottom="3dp"
+            android:backgroundTint="@android:color/transparent"
+            android:text="@string/HesabYoxdurYazisi"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewhesabartiqvarsa"
+            app:layout_constraintStart_toStartOf="@+id/textViewhesabartiqvarsa"
+            app:layout_constraintTop_toTopOf="@+id/textViewhesabartiqvarsa" />
+
+        <TextView
+            android:id="@+id/ParoluYaddanCixartdim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:fontFamily="@font/fallingskymedium_ved9"
+            android:text="@string/ParolYaddancixdi"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/checkBoxRemember"
+            app:layout_constraintEnd_toEndOf="@+id/layoutPASSWWW"
+            app:layout_constraintTop_toTopOf="@+id/checkBoxRemember" />
+
+
+        <com.google.android.material.divider.MaterialDivider
+            android:id="@+id/materialDidsdvvvdsidersa"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="80dp"
+            app:dividerColor="#E5E5E5"
+            app:dividerInsetEnd="16dp"
+            app:dividerInsetStart="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView20"
+            app:layout_constraintEnd_toEndOf="@+id/textView20"
+            app:layout_constraintTop_toTopOf="@+id/textView20" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/fallingskymedium_ved9"
+            android:text="Or sign in with"
+            android:textColor="#797979"
+            app:layout_constraintEnd_toEndOf="@+id/enterBtn"
+            app:layout_constraintStart_toStartOf="@+id/enterBtn"
+            app:layout_constraintTop_toBottomOf="@+id/enterBtn" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:id="@+id/materialDidsdssvdsidersa"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            app:dividerColor="#E5E5E5"
+            app:dividerInsetEnd="16dp"
+            app:dividerInsetStart="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView20"
+            app:layout_constraintStart_toStartOf="@+id/textView20"
+            app:layout_constraintTop_toTopOf="@+id/textView20" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="500dp"
+            app:layout_constraintStart_toStartOf="@+id/materialDidsdvvvdsidersa"
+            app:layout_constraintTop_toBottomOf="@+id/textView20">
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:background="@drawable/apple_icon"
+                app:icon="@drawable/apple_icon" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="19dp"
+            app:cardCornerRadius="500dp"
+            app:layout_constraintBottom_toBottomOf="@+id/cardView3"
+            app:layout_constraintStart_toEndOf="@+id/cardView3"
+            app:layout_constraintTop_toTopOf="@+id/cardView3">
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:background="@drawable/google_icon"
+                app:icon="@drawable/apple_icon" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="19dp"
+            app:cardCornerRadius="500dp"
+            app:layout_constraintBottom_toBottomOf="@+id/cardView4"
+            app:layout_constraintStart_toEndOf="@+id/cardView4"
+            app:layout_constraintTop_toTopOf="@+id/cardView4">
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:background="@drawable/facebook_icon"
+                app:icon="@drawable/apple_icon" />
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
